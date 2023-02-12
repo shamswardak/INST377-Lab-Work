@@ -1,4 +1,4 @@
-<html lang="en">
+<html class="html" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,15 +6,15 @@
   <title>Shams's Labs</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div>
+<body class="body">
+  <div class="wrapper">
     <!-- wrapper -->
-    <header><h1>Shams's Labs For INST377</h1></header>
-    <div>
+    <header class="header"><h1 class="header h1">Shams's Labs For INST377</h1></header>
+    <div class="container">
         <!-- container -->
-      <div>
+        <div class="left_section box">
         <!-- left inputs -->
-        <h2>Album Names</h2>
+        <h2 class="h2">Album Names</h2>
         <ol>
           <li>Kanye West - Graduation</li>
           <li>Michael Jackson - Thriller</li>
@@ -23,31 +23,23 @@
           <li>Future - DS2</li>
         </ol>
       </div>
-      <div> <!-- right side -->
-        <h2>Image Carousel</h2>
-        </div> <!-- images box -->
-        <img src="images/mochi.gif" alt="rice ball">
-        <img src="images/mochi.jpg" alt="second rice ball">
-        <img src="images/mochi.png" alt="third rice ball">
-        <img src="images/mochi.svg" alt="fourth rice ball">
+      <div class="right_section box"> <!-- right side -->
+        <h2 class="h2">Image Carousel</h2>
+        <div> <!-- images box -->
+            <img class="grid img" src="images/mochi.gif" alt="rice ball">
+            <img class="grid" src="images/mochi.jpg" alt="second rice ball">
+            <img class="grid" src="images/mochi.png" alt="third rice ball">
+            <img class="grid" src="images/mochi.svg" alt="fourth rice ball">
+      </div>
       <div>
         <!-- description box -->
         The above images represents Mochi, which is a Japanese rice cake that is made of mochigome.
-      </div>
     </div>
+   </div>
   </div>
-</div>
-<footer>
-    <a href="http://github.com/shamswardak" target="_blank" rel="noopener noreferrer">Shams Wardak Github</a>
+ </div>
+<footer class="footer">
+    <a class=".footer a:hover" href="http://github.com/shamswardak" target="_blank" rel="noopener noreferrer">Shams Wardak Github</a>
 </footer>
 </body>
 </html>
-
-Hook it up to CSS by including style.css in the <head> tag
-
-Then add CSS class names to your HTML to make it look like the lab pictures.
-For example: <div class="selector">
-
-You should not need to edit the CSS to do this, only the HTML.
-
-Don't forget to add an actual set of image descriptions to your image carousel.
