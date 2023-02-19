@@ -25,12 +25,18 @@
       </div>
       <div class="right_section box"> <!-- right side -->
         <h2>Image Carousel</h2>
-        <div class="grid"> <!-- images box -->
-            <img class="grid" id="slide_1" src="images/lion1.png" alt="a picture of a lion overseeing" />
-            <img class="grid" id="slide_2" src="images/lion2.png" alt="a picture of a lion roaring" />
-            <img class="grid" id="slide_3" src="images/lion3.png" alt="a picture of a lion napping" />
-            <img class="grid" id="slide_4" src="images/lion4.png" alt="a picture of two lions fighting" />
-      </div>
+        <div class="carousel">
+            <button class="prev">prev</button>
+            <div class="slides"> <!-- images box -->
+                <div class="carousel_item visible"><img id="slide_1" src="images/lion1.png" alt="a picture of a lion overseeing" /></div>
+                <div class="carousel_item hidden"><img id="slide_2" src="images/lion2.png" alt="a picture of a lion roaring" /></div>
+                <div class="carousel_item hidden"><img id="slide_3" src="images/lion3.png" alt="a picture of a lion napping" /></div>
+                <div class="carousel_item hidden"><img id="slide_4" src="images/lion4.png" alt="a picture of two lions fighting" /></div>
+                  </div>
+        </div>
+        <div>
+            <button class="next">next</button>
+        </div>
       <div class="box">
         <!-- description box -->
         The above images are lions, who are large and powerful cats known as "The king of beasts".
@@ -41,7 +47,7 @@
 <footer class="footer">
     <a href="http://github.com/shamswardak" target="_blank" rel="noopener noreferrer">Shams Wardak Github</a>
 </footer>
-<script> src="script.js" </script>
+<script> src="script.js"</script>
 </body>
 </html>
 
