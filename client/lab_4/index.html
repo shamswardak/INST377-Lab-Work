@@ -8,37 +8,28 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <h1>Shams INST377 Labs</h1>
-      </header>
+      <header class="header"><h1>Shams INST377 Labs</h1></header>
       <div class="container">
         <div class="left_section box">
-          <h3>Form Inputs</h3>
+          <h2>Form Inputs</h2>
           <form action="https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json" class="box">
+            <div>
             <label class="restaurant_name" for="resto">Restaurant Name</label>
-            <input type="text" id="resto" />
+            <input type="text" id="resto"/>
+          </div>
             <button type="submit">Submit</button>
           </form>
         </div>
         <div class="right_section box">
-            <h3>Local Restaurants</h3>
-            <div class="restaurant_list box">A list of local restaurants from an API</div>
+            <h2>Local Restaurants</h2>
+            <div class="box" id="restaurant_list">
+              A list of local restaurants from an API
+            </div>
         </div>
       </div>
-    </div>
     <footer class="footer">
         <a href="http://github.com/shamswardak" target="_blank" rel="noopener noreferrer">Shams Wardak Github</a>
     </footer>
-  </body>
+  </div>
+ </body>
 </html>
-
-<!-- Bring in your successful HTML/CSS from the Flexbox lab -->
-<!-- Try typing 'doc' at the top of this file and pressing "tab" -->
-<!-- if your development environment is set up correctly -->
-<!-- the Emmett plugin will set this file up for you -->
-
-<!-- Requirements -->
-<!-- Your page will need a form in it with an 'action' to /api and a single text field with an id/name of "resto" -->
-<!-- If you open /routes/apiRoutes and go to line 38 you will find the server side answer to your request! -->
-
-<!-- This week doesn't have a script.js file in it, because you're focusing on HTML and CSS -->
