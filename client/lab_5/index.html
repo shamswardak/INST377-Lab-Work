@@ -14,14 +14,14 @@
           <h2>Form Inputs</h2>
           <form
             action="https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json"
-            class="box"
+            class="box main_form"
           >
             <div>
-              <label class="restaurant_name" for="resto">Restaurant Name</label>
-              <input type="text" id="resto" />
+              <label for="resto">Restaurant Name</label>
+              <input type="text" id="resto" name="resto" />
             </div>
             <button type="submit">Load Data</button>
-            <button type="filter">Filter Data</button>
+            <button type="button" class="filter_button">Filter Data</button>
           </form>
         </div>
         <div class="right_section box">
@@ -32,14 +32,10 @@
         </div>
       </div>
       <footer class="footer">
-        <a
-          href="http://github.com/shamswardak"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Shams Wardak Github</a
-        >
+        <a href="http://github.com/shamswardak">Shams Wardak Github</a>
       </footer>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
 
