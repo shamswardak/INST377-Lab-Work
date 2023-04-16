@@ -31,6 +31,14 @@ function getRandomIntInclusive(min, max) {
       return list[index];
     }));
   }
+
+  function initMap() {
+    const carto = L.map('map').setView([51.505, -0.09], 13);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(carto);
+  }
   
   async function mainEvent() {
     // the async keyword means we can make API requests
@@ -42,6 +50,8 @@ function getRandomIntInclusive(min, max) {
     const loadAnimation = document.querySelector("#data_load_animation");
     loadAnimation.style.display = "none";
     generateListButton.classList.add("hidden");
+
+    initMap();
   
     const storedData = localStorage.getItem("storedData");
     const parsedData = JSON.parse(storedData);
